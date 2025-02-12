@@ -1,0 +1,13 @@
+# ALIASES #
+  # Regular Users & Groups: In the 1000 Range#
+alias lregu="echo; grep -o '^[a-zA-Z0-9]*:[-a-zA-Z0-9]*:1[0-9][0-9][0-9].*$' /etc/passwd | column -ts ':' -N  'Reg. Users' ;echo"
+alias lregg="echo; grep -o '^[a-zA-Z0-9]*:[-a-zA-Z0-9]*:1[0-9][0-9][0-9].*$' /etc/group | column -ts ':' -N  'Reg. Groups'; echo"
+  # Lab (If Using) Users & Groups: In the 2000 Range #
+alias llabu="echo; grep -o '^[a-zA-Z0-9]*:[-a-zA-Z0-9]*:2[0-9][0-9][0-9].*$' /etc/passwd | column -ts ':' -N  'Lab. Users'; echo"
+alias llabg="echo; grep -o '^[a-zA-Z0-9]*:[-a-zA-Z0-9]*:2[0-9][0-9][0-9].*$' /etc/group | column -ts ':' -N  'Lab. Groups'; echo"
+  # System Users & Groups: In the 900 Range #
+alias lsysu="echo; grep -o '^[a-zA-Z0-9_]*:[-a-zA-Z0-9]*:9[0-9][0-9].*$' /etc/passwd | column -ts ':' -N  'Sys. Users'; echo"
+alias lsysg="echo; grep -o '^[a-zA-Z0-9_]*:[-a-zA-Z0-9]*:9[0-9][0-9].*$' /etc/group | column -ts ':' -N  'Sys. Groups'; echo"
+  # All Users & Groups #
+alias lallu="echo; grep -o '^[a-zA-Z0-9]*:[-a-zA-Z0-9]*:[1-5][0-9][0-9][0-9].*$' /etc/passwd | column -ts ':' -N  'All Users'; echo"
+alias lallg="echo; grep -o '^[a-zA-Z0-9]*:[-a-zA-Z0-9]*:[1-5][0-9][0-9][0-9].*$' /etc/group | column -ts ':' -N  'All Groups'; echo"
